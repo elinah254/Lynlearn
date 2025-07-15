@@ -1,0 +1,100 @@
+.coursesSection {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.coursesSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1E3A8A;
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.filterBtn {
+  background-color: #e5e7eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filterBtn:hover {
+  background-color: #d1d5db;
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.courseCard {
+  padding: 2rem;
+  border-radius: 12px;
+  color: #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background-color: #e5e7eb;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.courseBtn {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Background variants */
+.yellow {
+  background-color: #facc15;
+}
+
+.blue {
+  background-color: #1E3A8A;
+  color: white;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: white;
+}
