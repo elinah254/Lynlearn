@@ -1,31 +1,36 @@
+import styles from './Features.module.css';
+
 function Features() {
   const features = [
     {
-      title: "Interactive Lessons",
-      desc: "Learn by doing with an engaging, hands-on exercise.",
-      icon: "🧠"
+      icon: '🧠',
+      title: 'Interactive Lessons',
+      description: 'Learn by doing, with hands-on code exercises and instant feedback.'
     },
     {
-      title: "Beginner-Friendly",
-      desc: "Start from scratch with courses designed for coding newbies.",
-      icon: "👶"
+      icon: '👶',
+      title: 'Beginner-Friendly',
+      description: 'No coding experience? No problem! Start from scratch and grow fast.'
     },
     {
-      title: "Hands-on Projects",
-      desc: "Build real-world projects to apply and reinforce your skills.",
-      icon: "🛠️"
+      icon: '🛠️',
+      title: 'Real Projects',
+      description: 'Build simple but real-world projects to apply what you’ve learned.'
     }
   ];
 
   return (
-    <section className="features">
-      {features.map((f, i) => (
-        <div key={i} className="feature">
-          <div className="icon">{f.icon}</div>
-          <h3>{f.title}</h3>
-          <p>{f.desc}</p>
-        </div>
-      ))}
+    <section className={styles.featuresSection}>
+      <h2 className={styles.heading}>Why Choose LynLearn?</h2>
+      <div className={styles.featuresGrid}>
+        {features.map((feature, index) => (
+          <div className={styles.featureCard} key={index}>
+            <div className={styles.icon}>{feature.icon}</div>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
