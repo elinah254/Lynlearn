@@ -1,8 +1,10 @@
+import Hero from './components/Hero/Hero';
+
 function App() {
   return (
-    <>
-      <h1>LynLearn</h1>
-    </>
+    <div>
+      <Hero />
+    </div>
   );
 }
 
